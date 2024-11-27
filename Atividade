@@ -1,0 +1,46 @@
+Carregar a base TITANIC do seaborn
+
+##############
+import seaborn as sns
+
+data = sns.load_dataset('titanic')
+##############
+
+Observar a relação das features "pclass" com "class"
+
+Observar a quantidade de NaN existente na feature "deck"
+
+Remover as linhas que teham valores NaN
+
+Transformar todas as features categóricos usando One-Hot Encoder
+
+Coluna target é a "pclass" ou "survived"
+
+############
+y = data['survived']
+X = data.drop('survived', axis=1)
+############
+
+Separar os dados de treinamento e teste
+
+Treinar 2 árvores de decisão com características diferentes
+
+Treinar 2 kNN com características diferentes
+
+=====================
+
+Se der tempo ainda na aula:
+
+Carregar a base TRANSFUSION. URL da base segue abaixo:
+
+https://raw.githubusercontent.com/tmoura/machinelearning/master/transfusion.data
+
+A coluna 0 (zero) é o TARGET.
+
+Observe que a magnitude dos atributos é bem diferente, então cada atributo deve ser normalizado (código no mini tutorial de pandas).
+
+Separar os dados de treinamento e testes
+
+Treinar 2 árvores de decisão com características diferentes
+
+Treinar 2 kNN com características diferentes
